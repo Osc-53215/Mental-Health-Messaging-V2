@@ -6,7 +6,7 @@
     justify-content: space-between;
     padding: 10px 0;
     background-color: #128F8B;
-    color: white;
+    color: #eff2f5;
 }
 
 .header__left {
@@ -33,12 +33,12 @@
     flex: 0.4;
     opacity: 1;
     border-radius: 6px;
-    border-color: gray;
+    border-color: #eff2f5;
     text-align: center;
     display: flex;
     padding: 0 50px;
-    color: gray;
-    border: 1px gray solid;
+    color: #eff2f5;
+    border: 1px #eff2f5 solid;
 }
 
 .header__search > input {
@@ -47,10 +47,20 @@
     text-align: center;
     min-width: 30vh;
     outline: 0;
-    color: white;
+    color: #eff2f5;
+}
+
+.header__search > input::placeholder {
+    color: #eff2f5;
 }
 
 .header__right {
     flex: 0.3;
     display: flex;
+    align-items: flex-end;
+}
+
+.header__right > .MuiSvgIcon-root {
+    margin-left: auto;
+    margin-right: 20px;
 }
