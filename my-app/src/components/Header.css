@@ -24,6 +24,33 @@
 .header__avatar {
     cursor: pointer;
 }
+
 .header__avatar:hover {
     opacity: 0.8;
+}
+
+.header__search {
+    flex: 0.4;
+    opacity: 1;
+    border-radius: 6px;
+    border-color: gray;
+    text-align: center;
+    display: flex;
+    padding: 0 50px;
+    color: gray;
+    border: 1px gray solid;
+}
+
+.header__search > input {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    min-width: 30vh;
+    outline: 0;
+    color: white;
+}
+
+.header__right {
+    flex: 0.3;
+    display: flex;
 }
