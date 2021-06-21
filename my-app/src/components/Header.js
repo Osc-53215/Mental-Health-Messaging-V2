@@ -1,6 +1,7 @@
-import React from 'react'
-import './Header.css'
-import {Avatar} from '@material-ui/core'
+import React from 'react';
+import './Header.css';
+import {Avatar} from '@material-ui/core';
+import  AccessTimeIcon  from '@material-ui/icons/AccessTime';
 
 function Header() {
     return (
@@ -10,6 +11,7 @@ function Header() {
                     <Avatar />
                 </div>
 
+                    <AccessTimeIcon />
             </div>
 
             <div className = 'header__middle'>
