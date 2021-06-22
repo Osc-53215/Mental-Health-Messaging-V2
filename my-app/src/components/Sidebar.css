@@ -15,8 +15,25 @@
 
 .sidebar__header > .MuiSvgIcon-root{
     padding: 8px;
-    color: #128F8B;
+    color: #128F8B ;
     font-size: 18px;
     background-color: white;
     border-radius: 999px;
+}
+
+.sidebar__info {
+    flex: 1;
+}
+
+.sidebar__info > h2{
+    font-size: 15px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.sidebar__info > h3 {
+    display: flex;
+    font-weight: 400;
+    font-size: 13px;
+    align-items: center;
 }
