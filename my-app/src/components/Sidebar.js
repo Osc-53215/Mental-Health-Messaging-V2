@@ -12,7 +12,7 @@ function Sidebar() {
                     <h2>MH-Chat</h2>
                     <h3>
                         <FiberManualRecordIcon/> 
-                        Elizandra 
+                        Elizandra Sandoval
                     </h3>              
                 </div>
                 <CreatIcon />

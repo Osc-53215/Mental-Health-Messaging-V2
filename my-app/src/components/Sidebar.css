@@ -37,3 +37,10 @@
     font-size: 13px;
     align-items: center;
 }
+
+.sidebar__info > h3 > .MuiSvgIcon-root{
+    font-size: 14px;
+    margin-top: 1px;
+    margin-right: 2px;
+    color: greenyellow;
+}
