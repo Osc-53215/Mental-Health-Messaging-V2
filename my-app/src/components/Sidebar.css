@@ -6,3 +6,17 @@
     max-width: 260px;
     margin-top: 60px;
 }
+
+.sidebar__header {
+    display: flex;
+    border-bottom: 1px solid #eff2f5;
+    padding: 13px;
+}
+
+.sidebar__header > .MuiSvgIcon-root{
+    padding: 8px;
+    color: #128F8B;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 999px;
+}

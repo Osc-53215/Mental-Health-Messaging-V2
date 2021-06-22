@@ -1,6 +1,7 @@
 import React from 'react';
 import './Sidebar.css';
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
+import CreatIcon from '@material-ui/icons/Create'
 
 function Sidebar() {
     return (
@@ -8,13 +9,13 @@ function Sidebar() {
 
             <div className = 'sidebar__header'>
                 <div className = 'sidebar__info'>
-                    <h2>This is the header</h2>
+                    <h2>MH-Chat</h2>
+                    <h3>
+                        <FiberManualRecordIcon/> 
+                        Elizandra 
+                    </h3>              
                 </div>
-
-                <div className = 'sidebar__info'>
-                    <FiberManualRecordIcon/> 
-                    <h3>Elizandra Sandoval</h3>              
-                </div>
+                <CreatIcon />
             </div>  
 
         </div>
