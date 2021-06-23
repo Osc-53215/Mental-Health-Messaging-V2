@@ -3,8 +3,15 @@ import './SidebarOption.css';
 
 function SidebarOption({Icon, title}) {
     return (
-        <div className = 'sidebar__option'>
+        <div className = 'sidebaroption'>
             {Icon && <Icon fontSize = 'small' style = {{padding: 10}} />}
+            {Icon ? (
+                <h3>{title}</h3>
+            ): (
+                <div className = 'sidebaroption__channel'>
+                    <span>#</span> {title}
+                </div>
+            )}
         </div>
     )
 }
