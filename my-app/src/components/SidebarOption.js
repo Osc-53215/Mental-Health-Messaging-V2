@@ -1,7 +1,7 @@
 import React from 'react';
 import './SidebarOption.css';
 
-function SidebarOption({Icon, title}) {
+function SidebarOption({Icon, title, addChannelOption}) {
     return (
         <div className = 'sidebaroption'>
             {Icon && <Icon fontSize = 'small' style = {{padding: 10}} />}
