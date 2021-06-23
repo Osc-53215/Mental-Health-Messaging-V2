@@ -3,7 +3,7 @@ import './SidebarOption.css';
 
 function SidebarOption() {
     return (
-        <div>
+        <div className = 'sidebar__option'>
             
         </div>
     )
