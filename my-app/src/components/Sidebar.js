@@ -10,6 +10,7 @@ import FileCopyIcon from '@material-ui/icons/FileCopy';
 import PoepleAltIcon from '@material-ui/icons/PeopleAlt';
 import AppsIcon from '@material-ui/icons/Apps';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+import SidebarOption from './SidebarOption';
 
 function Sidebar() {
     return (
