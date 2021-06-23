@@ -1,0 +1,20 @@
+.sidebaroption {
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    padding-left: 2px;
+    cursor: pointer;
+}
+
+.sidebaroption:hover {
+   opacity: 0.9;
+   background-color:#0c6461 ;
+}
+
+.sidebaroption > h3 {
+   font-weight: 500;
+}
+
+.sidebaroption > h3 > span{
+   font-weight: 500;
+}
