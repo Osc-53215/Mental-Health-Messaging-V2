@@ -1,5 +1,6 @@
 import React from 'react';
 import './Sidebar.css';
+import SidebarOption from './SidebarOption';
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 import CreatIcon from '@material-ui/icons/Create';
 import InsertCommentIcon from '@material-ui/icons/InsertComment';
@@ -10,7 +11,8 @@ import FileCopyIcon from '@material-ui/icons/FileCopy';
 import PoepleAltIcon from '@material-ui/icons/PeopleAlt';
 import AppsIcon from '@material-ui/icons/Apps';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
-import SidebarOption from './SidebarOption';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import AddIcon from '@material-ui/icons/Add';
 
 function Sidebar() {
     return (
@@ -35,6 +37,10 @@ function Sidebar() {
             <SidebarOption Icon = {AppsIcon} title = 'Apps' />
             <SidebarOption Icon = {FileCopyIcon} title = 'File browser' />
             <SidebarOption Icon = {ExpandLessIcon} title = 'Show less' />
+            <hr />
+            <SidebarOption Icon = {ExpandMoreIcon} title = 'Channels' />
+            <hr />
+            <SidebarOption Icon = {AddIcon} title = 'Add Channels' />
 
         </div>
     )
