@@ -7,6 +7,12 @@
     margin-top: 60px;
 }
 
+.sidebar > hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #eff2f5;
+}
+
 .sidebar__header {
     display: flex;
     border-bottom: 1px solid #eff2f5;
