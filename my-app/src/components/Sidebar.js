@@ -17,7 +17,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import AddIcon from '@material-ui/icons/Add';
 
 function Sidebar() {
-    const [channels, loading, error] = useCollection(db.collection('rooms'))
+    const [channels] = useCollection(db.collection('rooms'))
 
 
     return (
