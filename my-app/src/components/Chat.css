@@ -1,0 +1,6 @@
+.chat {
+    flex: 0.7;
+    flex-grow: 1;
+    overflow: scroll;
+    margin-top: 60px;
+}
