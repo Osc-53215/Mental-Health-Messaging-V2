@@ -7,3 +7,17 @@
     display: flex;
     justify-content: center;
 }
+
+.chat__input > form > input {
+    position: fixed;
+    bottom: 30px;
+    width: 60%;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 20px;
+    outline: none;
+}
+
+.chat__input > form > button {
+    display: none !important;
+}
