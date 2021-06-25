@@ -1,0 +1,9 @@
+.chat__input {
+    border-radius: 20px;
+}
+
+.chat__input > form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
