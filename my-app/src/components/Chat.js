@@ -41,11 +41,17 @@ function Chat() {
             </div>
 
             <div className = 'chatmessages'>
+                {roomMessages?.docs.map(doc => {
+                    const {message, timestamp, user, userImage} = doc.data();
+
+                    
+                })}
+            </div>
+            
                 <ChatInput 
                 channelName = {roomDetails?.data().name}
                 channelId = {roomId}
                 />
-            </div>
 
         </div>
     )
