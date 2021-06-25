@@ -13,7 +13,7 @@ function Chat() {
     const[roomDetails] = useDocument(
         roomId && db.collection('rooms').doc(roomId)
     )
-    const [roomMessage] = useCollection(
+    const [roomMessages] = useCollection(
         roomId && 
         db.collection('rooms')
         .doc(roomId)
@@ -42,6 +42,7 @@ function Chat() {
 
             <div className = 'chatmessages'>
                 <ChatInput 
+                channelName = {roomDetails?.data().name}
                 channelId = {roomId}
                 />
             </div>
