@@ -12,3 +12,10 @@
 .message__info {
     padding-left: 10px;
 }
+
+.message__info > h4 >span{
+    color: gray;
+    font-weight: 300;
+    margin-left: 4px;
+    font-size: 10px;
+}
