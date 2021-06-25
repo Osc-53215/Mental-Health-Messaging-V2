@@ -1,7 +1,8 @@
 import  InfoOutlinedIcon  from '@material-ui/icons/InfoOutlined';
 import StarBorderOutlinedIcon  from '@material-ui/icons/StarBorderOutlined';
-import React from 'react'
-import './Chat.css'
+import React from 'react';
+import './Chat.css';
+import ChatInput from './ChatInput';
 
 function Chat() {
     return (
@@ -21,6 +22,10 @@ function Chat() {
                         <InfoOutlinedIcon /> Details
                     </p>
                 </div>
+            </div>
+
+            <div className = 'chatmessages'>
+                <ChatInput />
             </div>
 
         </div>
