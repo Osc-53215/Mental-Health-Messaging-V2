@@ -10,14 +10,18 @@ function Chat({channelName, channelId}) {
     const sendMessage = e => {
         e.preventDefault();
 
-        if (channelId) {
+        if (!channelId) {
             return false;
         }
 
-        db.collections('rooms').doc(channelId).collection('messages').add({
+        db.collection('rooms').doc(channelId).collection('messages').add({
             message: input,
-            timestamp: firebase.firestore.FieldValue.serverTimestamp()
+            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+            user: 'Elizandra Sandoval',
+            userImage: 'https://scontent-ort2-2.xx.fbcdn.net/v/t1.6435-9/170122139_4045199688874900_4382704728184763151_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=1IMzvLGdYLMAX_P97qi&_nc_ht=scontent-ort2-2.xx&oh=ba77bd6732768b076fda497ddf1123ff&oe=60E68777'
         });
+
+        setInput('')
 
     }
 
