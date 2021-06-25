@@ -28,7 +28,7 @@ function Chat() {
 
                 <div className = 'chat__headerleft'>
                     <h4>
-                        <strong>#Room-name</strong>
+                        <strong>#{roomDetails?.data().name}</strong>
                         <StarBorderOutlinedIcon/>
                     </h4>
                 </div>
