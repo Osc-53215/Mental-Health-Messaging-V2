@@ -1,6 +1,6 @@
 import  InfoOutlinedIcon  from '@material-ui/icons/InfoOutlined';
 import StarBorderOutlinedIcon  from '@material-ui/icons/StarBorderOutlined';
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useSelector } from 'react-redux';
 import { selectRoomId } from '../features/appSlice';
 import './Chat.css';
@@ -10,17 +10,22 @@ import { useCollection, useDocument } from 'react-firebase-hooks/firestore';
 import { db } from '../firebase';
 
 function Chat() {
+    const chatRef = useRef(null);
     const roomId = useSelector(selectRoomId);
     const[roomDetails] = useDocument(
         roomId && db.collection('rooms').doc(roomId)
-    )
-    const [roomMessages] = useCollection(
+    );
+    const [roomMessages, loading] = useCollection(
         roomId && 
         db.collection('rooms')
         .doc(roomId)
         .collection('messages')
         .orderBy('timestamp', 'asc')
-    )
+    );
+
+    useEffect(() => {
+        chatRef?.current?.scrollIntoView();
+    }, [roomId, loading]);
 
     return (
         <div className = 'chat'>
@@ -55,6 +60,7 @@ function Chat() {
                         />
                     )
                 })}
+                <div className = 'chat__bottom' ref = {chatRef}> </div>
             </div>
             
                 <ChatInput 
