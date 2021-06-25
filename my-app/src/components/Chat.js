@@ -5,9 +5,21 @@ import { useSelector } from 'react-redux';
 import { selectRoomId } from '../features/appSlice';
 import './Chat.css';
 import ChatInput from './ChatInput';
+import { useCollection, useDocument } from 'react-firebase-hooks/firestore';
+import { db } from '../firebase';
 
 function Chat() {
     const roomId = useSelector(selectRoomId);
+    const[roomDetails] = useDocument(
+        roomId && db.collection('rooms').doc(roomId)
+    )
+    const [roomMessage] = useCollection(
+        roomId && 
+        db.collection('rooms')
+        .doc(roomId)
+        .collection('messages')
+        .orderBy('timestamp', 'asc')
+    )
 
     return (
         <div className = 'chat'>
