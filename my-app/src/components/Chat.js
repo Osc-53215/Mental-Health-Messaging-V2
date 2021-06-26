@@ -29,8 +29,9 @@ function Chat() {
 
     return (
         <div className = 'chat'>
-
-            <div className = 'chat__header'>
+            {roomDetails && roomMessages &&(
+            <>
+                <div className = 'chat__header'>
 
                 <div className = 'chat__headerleft'>
                     <h4>
@@ -68,7 +69,9 @@ function Chat() {
                 channelName = {roomDetails?.data().name}
                 channelId = {roomId}
                 />
-
+            </>
+            )}
+            
         </div>
     )
 }
