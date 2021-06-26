@@ -11,6 +11,17 @@ import { auth } from './firebase';
 function App() {
   const [user, loading] = useAuthState(auth);
 
+  if (loading) {
+    return (
+      <div className = 'apploading'>
+        <div className = 'apploading__contents'>
+          
+        </div>
+
+      </div>
+    )
+  }
+
 
   return (
     <div>
