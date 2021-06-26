@@ -1,7 +1,7 @@
 import React from 'react';
 import './Sidebar.css';
 import { useCollection } from 'react-firebase-hooks/firestore';
-import { db } from '../firebase';
+import { auth, db } from '../firebase';
 import SidebarOption from './SidebarOption';
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 import CreatIcon from '@material-ui/icons/Create';
@@ -15,10 +15,11 @@ import AppsIcon from '@material-ui/icons/Apps';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import AddIcon from '@material-ui/icons/Add';
+import { useAuthState } from 'react-firebase-hooks/auth';
 
 function Sidebar() {
     const [channels] = useCollection(db.collection('rooms'))
-
+    const [user] = useAuthState(auth);
 
     return (
         <div className = 'sidebar'>
@@ -28,7 +29,7 @@ function Sidebar() {
                     <h2>MH-Chat</h2>
                     <h3>
                         <FiberManualRecordIcon/> 
-                        Elizandra Sandoval
+                        {user.displayName}
                     </h3>              
                 </div>
                 <CreatIcon />
