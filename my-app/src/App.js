@@ -7,15 +7,23 @@ import Chat from './components/Chat';
 import Login from './components/Login'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from './firebase';
+import logo from './components/photos/mh-image.PNG';
+import Spinner from 'react-spinkit';
 
 function App() {
   const [user, loading] = useAuthState(auth);
+  
 
-  if (loading) {
+  if (true) {
     return (
       <div className = 'apploading'>
         <div className = 'apploading__contents'>
-          
+          <img src = {logo} alt = ''/>
+          <Spinner 
+            name = 'ball-clip-rotate-multiple'
+            color = 'black'
+            fadeIn = 'none'
+          />
         </div>
 
       </div>
