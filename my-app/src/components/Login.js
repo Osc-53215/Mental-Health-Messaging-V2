@@ -1,19 +1,26 @@
 import React from 'react';
 import './Login.css';
-import logo from './photos/mh-image.PNG'
+import logo from './photos/mh-image.PNG';
+import { Button } from '@material-ui/core'
 
 function Login() {
+    
+    const singIn = (e) => {
+        e.preventDefault();
+        
+    }
+
     return (
         <div className = 'login'>
 
             <div className = 'login__inner'>
                 <img src = {logo} alt = ''/>
 
-                <h1>Sign in to the Uni-Health</h1>
+                <h1>Sign in to Uni-Health</h1>
                 <p>UniHealth.com</p>
 
-                <Button type = 'submit' onClick = {singin}>
-                    Sing in with Google
+                <Button type = 'submit' onClick = {singIn}>
+                    Sign in with Google
                 </Button>
 
             </div>
