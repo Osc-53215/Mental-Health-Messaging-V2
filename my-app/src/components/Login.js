@@ -5,6 +5,7 @@ import logo from './photos/mh-image.PNG'
 function Login() {
     return (
         <div className = 'login'>
+            
             <div className = 'login__inner'>
                 <img src = {logo} alt = ''/>
             </div>
