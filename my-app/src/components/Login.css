@@ -23,6 +23,6 @@
 .login__inner > button {
     margin-top: 50px;
     text-transform: inherit !important;
-    background-color: rosybrown;
+    background-color: rosybrown !important;
     color: white;
 }
