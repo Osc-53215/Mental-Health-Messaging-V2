@@ -24,7 +24,7 @@ function Chat() {
     );
 
     useEffect(() => {
-        chatRef?.current?.scrollIntoView();
+        chatRef?.current?.scrollIntoView({behavior: 'smooth'});
     }, [roomId, loading]);
 
     return (
@@ -64,6 +64,7 @@ function Chat() {
             </div>
             
                 <ChatInput 
+                chatRef = {chatRef}
                 channelName = {roomDetails?.data().name}
                 channelId = {roomId}
                 />
