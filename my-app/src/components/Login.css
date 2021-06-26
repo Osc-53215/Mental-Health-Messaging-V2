@@ -1,7 +1,7 @@
 .login {
     background-color: #f8f8f8;
     height: 100vh;
-    display: grid;
+    display: grid;    
     place-items: center;
 }
 

@@ -13,7 +13,7 @@ function App() {
 
 
   return (
-    <div className="app">
+    <div>
 
       <Router>
         {!user ? (
@@ -21,6 +21,7 @@ function App() {
         ): (
 
         <>
+        <div className="app">
         <Header/>
         <Sidebar />
         
@@ -29,7 +30,7 @@ function App() {
               <Chat />
           </Route>
         </Switch>
-
+        </div>
       </>
 
         )}
