@@ -14,13 +14,13 @@ function App() {
   const [user, loading] = useAuthState(auth);
   
 
-  if (true) {
+  if (loading) {
     return (
       <div className = 'apploading'>
         <div className = 'apploading__contents'>
           <img src = {logo} alt = ''/>
           <Spinner 
-            name = 'ball-clip-rotate-multiple'
+            name = 'ball-spin-fade-loader'
             color = 'black'
             fadeIn = 'none'
           />
