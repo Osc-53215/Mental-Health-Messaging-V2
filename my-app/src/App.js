@@ -20,7 +20,7 @@ function App() {
         <div className = 'apploading__contents'>
           <img src = {logo} alt = ''/>
           <Spinner 
-            name = 'ball-spin-fade-loader'
+            name = 'ball-beat'
             color = 'black'
             fadeIn = 'none'
           />
